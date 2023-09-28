@@ -6,6 +6,7 @@
     --body-bg-color: #F2DEBA;
     --board-bg-color: #F1F0E8;
     --cell-hover-color: #e3cfaf;
+    --restart-hover-color: #347981;
 }
 
 * {
@@ -64,4 +65,24 @@ header h1 {
 
 .cell:hover {
     background-color: var(--cell-hover-color);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#restart {
+    color: var(--body-bg-color);
+    background-color: var(--header-bg-color);
+    border: 1px solid var(--header-bg-color);
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#restart:hover {
+    background-color: var(--restart-hover-color);
 }
