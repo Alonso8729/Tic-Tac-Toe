@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Open+Sans&family=Roboto&family=Varela+Round&display=swap');
+
+:root {
+    --header-bg-color: #3A8891;
+    --header-text-color: #EEE0C9;
+    --body-bg-color: #F2DEBA;
+    --board-bg-color: #F1F0E8;
+    --cell-hover-color: #e3cfaf;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: var(--body-bg-color);
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--header-bg-color);
+    padding: 2.5rem;
+}
+
+header h1 {
+    color: var(--header-text-color);
+    text-align: center;
+    font-size: 5rem;
+}
+
+/*MAIN*/
+#turn {
+    text-align: center;
+    color: var(--header-bg-color);
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.gameboard {
+    display: grid;
+    margin: 0px auto;
+    width: 450px;
+    height: 450px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--header-text-color);
+    border: 3px solid var(--header-bg-color);
+}
+
+.cell {
+    border: 3px solid var(--header-bg-color);
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: var(--cell-hover-color);
+}
