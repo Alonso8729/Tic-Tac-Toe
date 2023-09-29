@@ -108,5 +108,7 @@ const gameHandle = (() => {
         return isGameOver;
     })
 
-    return { playRound, checkGameOver, getPlayerMarker }
+
+
+    return { playRound, checkGameOver }
 })();
